@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #695d46;
+    text-align: center;
+    font-family: Jazzier;
+}
+
+header {
+    text-align: center;
+}
+
+h2 {
+    color: #ff5e0e
+}
+
+p {
+    color: green;
+}
+
+footer {
+    background-color: #695d46;
+    color: #ffffff;
+}

@@ -1,0 +1,22 @@
+Pisa CoderDojo
+Cosa è il Pisa Coder Dojo ?
+Pisa CoderDojo (https://pisa.coderdojo.it/) è un'iniziativa basata sul volontariato all'interno della rete globale CoderDojo (oltre 1500 club). Pisa CoderDojo è attualmente ospitato presso il Dipartimento di Informatica dell'Università di Pisa, Italia, e si concentra sull'insegnamento della programmazione ai giovani (di età compresa tra i 7 e i 17 anni). I partecipanti partecipano alle sessioni Dojo senza alcun costo per i loro genitori, le loro scuole o insegnanti. Tutti i mentori offrono il loro tempo volontariamente e gratuitamente.
+Quanti membri ha? Chi sono?
+Ad ottobre 2024, Pisa CoderDojo conta 150 iscritti attivi e 11 mentori, registrati sul sito ufficiale. Gli iscritti sono genitori/tutori di bambini fino a 13 anni o adolescenti.
+I mentori sono un gruppo diversificato di individui (accademici, professionisti del settore, studenti, freelance), uniti dalla passione per l'informatica e dal desiderio di trasmetterla alle nuove generazioni. In breve, i mentori del Pisa CoderDojo non sono solo esperti di informatica, ma anche persone appassionate e creative, motivate a trasmettere il loro entusiasmo ai giovani partecipanti. La loro eterogeneità contribuisce a creare un ambiente di apprendimento ricco e stimolante. Dal 2024, alcuni ex partecipanti del Pisa CoderDojo, che hanno scoperto la loro passione per l'informatica grazie a questa iniziativa, sono diventati mentori.
+È possibile trovare un elenco aggiornato di tutti i mentori del Pisa CoderDojo su: https://pisa.coderdojo.it/mentors/.
+Che tipo di attività organizzano?
+I laboratori del Pisa CoderDojo introducono i giovani a una varietà di attività e di solito includono tre sessioni parallele:
+Code Newbies
+Attività di base basate su Scratch per imparare a programmare tramite un linguaggio basato su blocchi.
+Code Beginners
+Attività di programmazione e making più complesse che si basano su
+linguaggi a blocchi, come le funzionalità avanzate di Scratch,
+il microbit (https://microbit.org/ ) per creare progetti ciber-fisici,
+AppInventor per programmare applicazioni per smartphone.
+Code Explorer
+Esplorazione di linguaggi più complessi come
+Python e Micropython
+Arduino
+microbit
+HTML
