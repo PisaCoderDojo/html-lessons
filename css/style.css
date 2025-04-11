@@ -1,34 +1,119 @@
+/* General body styling */
 body {
-    font-family: sans-serif;
-    font-size: 1.12rem;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
     line-height: 1.6;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
 }
 
+/* Center the main content */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
 h1 {
     text-align: center;
-    font-size: 3rem;
-    line-height: 1.1;
+    font-size: 2.5rem;
+    color: #ff4500; /* Bright orange for fun */
+    margin-bottom: 20px;
 }
 
-header {
-    text-align: center;
-}
-
+/* Subheadings */
 h2 {
-    font-size: 1.5rem;
-    inline-size: none;
+    font-size: 1.8rem;
+    color: #007acc; /* Blue for subheadings */
+    margin-top: 20px;
 }
 
-footer {
-    padding: 25px;
-    text-align: center;
-    background-color: #695d46;
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
     color: #ffffff;
+    background-color: #28a745; /* Green button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
 }
 
-.project {
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+button:active {
+    background-color: #1e7e34; /* Even darker green when clicked */
+}
+
+/* Input fields */
+input[type="text"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #007acc; /* Blue border */
+    border-radius: 5px;
+    width: calc(100% - 24px); /* Full width minus padding */
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+    border-color: #0056b3; /* Darker blue when focused */
+    outline: none;
+}
+
+/* Unordered list for materials */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Fallback message for unsupported browsers */
+#notSupported {
+    padding: 10px;
+    background-color: #ffcccb; /* Light red background */
+    color: #990000; /* Dark red text */
+    border: 1px solid #990000;
+    border-radius: 5px;
+    margin-bottom: 20px;
     text-align: center;
-    border: 2px solid red;
-    background-color: aqua;
-   margin-block: 10px;
+}
+
+/* Game sections */
+section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9; /* Light gray background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Highlight the play button */
+#play {
+    background-color: #ff4500; /* Bright orange for the play button */
+}
+
+#play:hover {
+    background-color: #e03e00; /* Darker orange on hover */
 }
