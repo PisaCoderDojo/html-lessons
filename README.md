@@ -255,14 +255,16 @@ h1 {
     color: red;
 }
 ```
-### Text alignment
+## Text
+
+### text-align
 The title is centered and the logo.
 - h1: center an h1 is using  `text-align: center;`
 - img: works with text alignment beacuse the img is inline element.
 
 note: left and riht are "deprecated" and use the logical property `start` and `end`  to support RTL language translation.
 
-### Font family and font stack
+### font-family and font stack
 The `font-family: serif`  or `sans-serif` `fantasy` `cursive`.
 These are the default system fonts.
 
@@ -273,17 +275,18 @@ Font stack: a list of fonts to fallback.
 NOTE: use quotation mark if theri a space in the name of the font.
 
 ### Inheritance
-Inherint the css without copy and paster everywhere.
+An element inherit the css from the parent.
 
-Put the `body` select in the top with the font-family.
-NOTE: put the fonts* in side the body because all the element inherit that classes.
+Approach: at the top use the the `body` selector and ahh th `font-family: sans-serif`. All the page inherit the font.
 
-If an element redefined a colot it can override the parement by adding a more specific .
+If an child element redefined a color it can override the parent by adding a more specific color.
+
+
 
 ### User agent styles
 The user-agent style are the default style applied by the browser. E.g the strong element are already stylesheet.
 
-The uer-agent style can confuse the inheritance.
+The user-agent style can confuse the inheritance.
 
 To force inheritance: `color: inherit`
 
@@ -293,3 +296,273 @@ p {
     color: green:
 }
 ```
+
+
+### Font-size
+The `font-size: 1cm`
+
+NOTE: a css pixel is NOT a screen pixel but is has a fixed size and it is defined in the user preference.
+
+The common unit is
+ - `px` : it is most easiest unit to use. BUT it is a BAD practise because the user can change the css pixel dimension via the prefeenze.
+ - `cm`
+ - `in`
+ - `rem` is the BEST option. 1rem is based on the `font-size` of the root element (the <html> element). A rem is defined as a scale with respect to font-size of the `<html>` element.
+
+Example
+
+```
+html {
+    font-size: 25px;
+}
+
+
+h1 {
+  font-size: 1rem
+}
+
+```
+The `h1` element has the font size equal to 45px.
+
+Question: what is the default font-size of the html element ?
+The default is 16px. the user can change the default size via the preference.
+
+
+NOTE: as FE developer we do not have the control where the page is shown (screen size, different user preferences).
+
+SUGGESTION: do not overwrite the `font-size` o the html element but reason about scaling.
+
+Change the font-size:XXrem to test the size and choose the best look dimensions.
+
+SUGGETION: start to define the `font-size` on  the body with `1.25rem`
+
+
+Other styles need to sdjust:
+- `line-height: 1.5` : do not use a unit and specify in percentage.
+-`margin-block:50px` to add block margin on paragraph or list
+
+NOTE: the default line-height is 1.4. The value of `1.6` is a goos stragin point
+
+
+### Inline vs internal stylesheet
+
+- avoid inline style `<h1 style="color: green">`
+- avoid `<style>` element in the `head` because it applies only on the page you added.
+
+
+### Dev tools
+
+
+## The box mode
+
+"Everything is a BOX"
+
+Example: try to  `p {
+    margin-block:50px;
+    background-color: #ff5e0e;
+}
+` and see that it show a box
+
+### Content
+
+
+
+- `inline-size: xxpx`: it is a logical property. limits how can be big. (DONT use the `width`)
+- `block-size: 350px`: limit the upper down (the block) size. (DONT use the `heigh`)
+
+SUGGESTION: use the logical property like the `inline-size` is better of `width`.
+SUGGESTION: BE very carefully the block-size.because fixed higth can cause issue when the text is not correctly
+
+
+### Padding
+*padding*: it is an empty space that has the same color of background around the content.
+
+Use padding to have MORE background colour.
+
+Options:
+- padding-block:  add padding on top and button
+- padding-inline:  add passing on left and right
+- padding-inline-start
+- padding-inline-end
+
+Avoid `padding-left` `padding-right` us the logical version padding-block and inline.
+
+### Border
+*borders*
+it is the advantage to have a different colour from the background.
+
+- `border: 20px dotted`
+- `border-inline: solid` add border only on right and left (x axes)
+
+
+### Margin
+Add empty space that DOES NOT include the background colour. Is it equal to padding but without colour.
+
+
+### box-sizing
+"The default way the dafult box size is wrong".
+
+Using the `inline-size: 400px` in the element conta
+
+Css reset: use the rest selector to get all the elements with a box sizing fixed.
+
+```
+* {
+  box-sixing: border-box;
+}
+
+```
+
+
+## Css selector (class and id)
+
+It is an attribute (like href) into tml element.
+
+- class selector
+
+
+```
+<p class="accent"> </p
+
+.accent {
+    color: #695d46;
+    font-weight: bold;
+}
+
+```
+
+- id selector
+
+```
+
+<h2 id="accent">
+
+#accent
+
+```
+
+Differences
+- classes are reusable in the page
+- id must be unique in a page. it is unique per page.
+
+Usage
+- use element select
+- use the classes for select specific
+- avoid id selector
+
+
+## Div and span
+
+Thery are no semantics meaning. Thery are used for organizatioal purpose. (like grouping paragraoh with the same style)
+They are used with css classes
+
+- <div>  (i.e. division of content) is a block element
+
+```
+
+.teal-bg {
+  background-color: red;
+  border: red solid 10px;
+  padding: 20px;
+  color: #ffffff;
+}
+
+<div  class="teal-bg">
+  <p>
+  <p>
+</div>
+
+```
+
+- <span> is an inline element
+
+```
+.teal-text{
+    color: blue;
+}
+
+<h1> Il mio <span class="teal-text"> TITOLO <span> </h1>
+
+```
+
+
+NOTE: show that using a class you can style different element (a div and a footer in two different pages)
+
+NOTE: if a class must be applied to an entire element add it to the element and add a span with a class inside.
+
+
+## Sudo class: style a link
+
+
+```
+a {
+ color: red;
+}
+
+a:visited {      // olor to blue after the link is visited
+ color:blue;
+}
+
+a:hover,           // change color when the the pointer is hovering the link
+a:focus-visible{   // change the color when the link is navigate using the keyboard
+ color:purple;
+}
+
+a:active{         // change color when the click is hold (is very fast so it can be not seen)
+    color:black;
+}
+
+```
+
+IMPORTANT: the order is important. The button wins. The LAST true sudo class is activated.
+
+Order
+- visited
+- hover, focus-visible
+- active
+
+
+## Descendant selector
+IF you want to select something that is descendent without adding a class.
+
+```
+.teal-bg strong { // color the strong when it is inside the class teal-bg
+   color: yellow;
+}
+
+<div class="teal-bg">
+   <p> ciao sono <strong> forte </strong> </p>
+<div>
+
+```
+
+
+## Specificity
+The order is important in the css file:
+the last true element wins ond overwrite the previous, BUT the order matters ONLY for same element. More specific selector wins
+
+```
+
+.orange.text{
+    color:red;
+}
+
+h2 {
+    color: red
+}
+
+
+<h2> my title <h2>
+
+```
+
+Use a calculator https://polypane.app/css-specificity-calculator/ to ge the score of te specficuty.
+
+
+The score has three parts:
+- id
+- class
+- element
+
+
+Conflicts for specifity can occurs.

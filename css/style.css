@@ -1,11 +1,13 @@
 body {
     font-family: sans-serif;
+    font-size: 1.12rem;
+    line-height: 1.6;
 }
 
 h1 {
-    color: #695d46;
     text-align: center;
-    font-family: Jazzier;
+    font-size: 3rem;
+    line-height: 1.1;
 }
 
 header {
@@ -13,14 +15,20 @@ header {
 }
 
 h2 {
-    color: #ff5e0e
-}
-
-p {
-    color: green;
+    font-size: 1.5rem;
+    inline-size: none;
 }
 
 footer {
+    padding: 25px;
+    text-align: center;
     background-color: #695d46;
     color: #ffffff;
+}
+
+.project {
+    text-align: center;
+    border: 2px solid red;
+    background-color: aqua;
+   margin-block: 10px;
 }
