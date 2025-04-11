@@ -3,39 +3,45 @@
     <head>
         <title> PisaCoderDojo: Codice morse </title>
         <script src="js/index.js"> </script>
-        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
-    <main>
-        <h1>Gioca con il codice Morse</h1>
-        <p>Torna ai <a href="projects.html">Progetti</a></p>
 
-        <p> Ecco una serie di giochi basati sul codice morse</p>
+    <body>
+        <header>
+            <img src="images/logo-small.png" alt="Pisa CoderDojo" />
+            <h1> Pisa CoderDojo </h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Progetti</a>
+            </nav>
+        </header>
 
-        <p> Cosa hai bisogno per giocare:</p>
-        <ul>
-            <li>1 scheda con micropython installato</li>
-            <li>1 Modulino Buzzer</li>
-        </ul>
+        <main>
+                <h1>Gioca con il codice Morse</h1>
+                <p> Ecco una serie di giochi basati sul codice morse</p>
+                <p> Cosa hai bisogno per giocare:</p>
+                <ul>
+                    <li>1 scheda con micropython installato</li>
+                    <li>1 Modulino Buzzer</li>
+                </ul>
+                <div id="notSupported" hidden>
+                    Serial non supportato dal browser
+                </div>
 
-        <div id="notSupported" hidden>
-            Serial non supportato dal browser
-        </div>
+                <h2>Decodifica il messaggio in codice morse</h2>
+                <p> Clicca su Play e decodifica il messaggio in codice morse che senti e riportalo. Verifica se hai fatto giusto cliccando su Verifica</p>
+                <button id="play">Play</button>
+                <input type="text" id="answer" placeholder="Inserisci la tua risposta" />
+                <button id="check">Verifica</button>
 
-        <h2>Decodifica il messaggio in codice morse</h2>
+                <h2>Codifica il tuo messaggio</h2>
+                <p> Invia un messaggio in codice morse al tuo amico. Lui deve capire il messaggio che gli ha inviato</p>
+                <input type="text" id="input" placeholder="Enter Morse Code" />
+                <button id="send">Send</button>
+        </main>
 
-        <p> Clicca su Play e decodifica il messaggio in codice morse che senti e riportalo. Verifica se hai fatto giusto cliccando su Verifica</p>
-
-        <button id="play">Play</button>
-
-        <input type="text" id="answer" placeholder="Inserisci la tua risposta" />
-        <button id="check">Verifica</button>
-
-        <h2>Codifica il tuo messaggio</h2>
-
-        <p> Invia un messaggio in codice morse al tuo amico. Lui deve capire il messaggio che gli ha inviato</p>
-
-        <input type="text" id="input" placeholder="Enter Morse Code" />
-        <button id="send">Send</button>
-
-    </main>
+        <footer>
+            <p>Tutti i diritti riservati</p>
+        </footer>
+    </body>
 </html>
